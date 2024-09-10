@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700);
+@import url(https://fonts.googleapis.com/css2?family=Fraunces:wght@700);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fdffa3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: hsl(228, 12%, 48%);
+}
+
+.preview-card {
+    width: 610px;
+    height: 520px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.card-image {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 2rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.product-type {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.item-name {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-left: 5px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  font-family: "Fraunces", serif;
+}
+
+.discount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #289e00;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.add-cart {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #289e00;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+}
+
+.add-cart:hover {
+  background-color: hsl(158, 36%, 37%);
+}
+
+.add-cart:focus {
+  box-shadow: 0 0 0 2px hsl(158, 79%, 55%);
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 40rem;
+  position: absolute;
+}
+
+.attribution a {
+  color: hsl(228, 12%, 48%);
+  
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 1440px;
+  }
+  /* .card-image {
+    width: 100%;
+    height: 200px;
+  } */
+  .card-image img {
+    object-fit:inherit;
+    height: 100%;
+  }
+}
